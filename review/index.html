@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YEJIN MOMENTUM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="clock">00:00</div>
+
+  <form id="login">
+    <input type="text" placeholder="이름을 입력하세요." required value="">
+    <input type="submit" value="LOGIN">
+  </form>
+
+  <div id="greeting" class="hidden">
+    <span class="greetingText"></span>
+    <span class="yourName"></span>
+  </div>
+  
+  <form id="logout" class="hidden" >
+    <input type="submit" value="LOGOUT">
+  </form>
+
+  <div id="todo">Todo</div>
+
+  <script src="js/clock.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
