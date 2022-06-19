@@ -1,3 +1,6 @@
+export default toDoForm;
+// export toDoList;
+
 const toDoForm = document.querySelector("#todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.querySelector("#todo-list");
@@ -35,7 +38,7 @@ function paintToDo(newTodo){
   li.append(btn);
 
   span.innerText = newTodo.text;
-  btn.innerText = "❌";
+  btn.innerText = "X";
 
   btn.addEventListener("click", delBtn);
   

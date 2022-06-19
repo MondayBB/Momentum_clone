@@ -1,4 +1,3 @@
-import API_KEY from "./weatherAPI.js";
 
 function onGeoOk(position){
   const lat = position.coords.latitude;
@@ -18,3 +17,4 @@ function onGeoError(){
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 // 이걸 부르면 브라우저에서 위치 좌표를 준다. wifi, 위치, gps 등
 
+import API_KEY from "./weatherAPI.js";

@@ -1,3 +1,90 @@
 .hidden{
   display: none;
 }
+
+body{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+h2{
+  position: absolute;
+  color: #fff;
+  font-size: 130px;
+  text-align: center;
+  line-height: 130px;
+  top: 30%;
+  display: block;
+}
+
+#quote{
+  position: absolute;
+  bottom: 25px;
+}
+#quote > span{
+  display: block;
+  text-align: center;
+}
+#quote > span:last-child{
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+#weather{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+form#todo-form{
+  position: absolute;
+  top: 60%;
+}
+form#todo-form input{
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  width: 300px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+}
+form#todo-form input::placeholder{
+  color: #fff;
+  font-size: 17px;
+}
+
+#todo-list{
+  width: 300px;
+  position: absolute;
+  top: 65%;
+  height: 200px;
+  overflow-y: scroll;
+}
+#todo-list li{
+  font-size: 15px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+#todo-list li button{
+  border: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  margin-left: 10px;
+}
+#todo-list li button:hover{
+  color: rgba(255, 255, 255, 1);
+}

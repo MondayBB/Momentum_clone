@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
     <h2 id="clock">00:00:00</h2>
@@ -16,13 +18,14 @@
         type="text"
         placeholder="What is your name?"
       />
-      <input type="submit" value="Login"></input>
+      <input type="submit" value="✔"></input>
     </form> 
     <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
+    <button id="logout" class="hidden">LOGOUT</button>
+    <form id="todo-form" class="hidden">
       <input type="text" placeholder="Write a To Do and Press Enter" required>
     </form>
-    <ul id="todo-list"></ul>
+    <ul id="todo-list" class="hidden"></ul>
     <div id="quote">
       <span></span>
       <span></span>
@@ -32,12 +35,12 @@
       <span></span>
     </div>
 
-    <script src="js/greeting.js"></script>
+    <script type="module" src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
+    <script type="module" src="js/todo.js"></script>
     <script type="module" src="js/weather.js"></script>
+    <!-- <script type="module" src="js/weather.js"></script> -->
   </body>
 </html>
