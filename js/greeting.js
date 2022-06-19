@@ -1,5 +1,5 @@
-import toDoForm from './todo.js';
-// import toDoList from './todo.js';
+import {toDoForm} from './todo.js';
+import {toDoList} from './todo.js';
 
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
@@ -25,7 +25,7 @@ function paintGreetings(username){
   greeting.classList.remove(HIDDEN_CLASS);
   logout.classList.remove(HIDDEN_CLASS);
   toDoForm.classList.remove(HIDDEN_CLASS);
-  // toDoList.classList.remove(HIDDEN_CLASS);
+  toDoList.classList.remove(HIDDEN_CLASS);
 }
 
 const savedUserName = localStorage.getItem(USERNAME_KEY);
@@ -42,8 +42,9 @@ function logoutSubmit(){
   greeting.classList.add(HIDDEN_CLASS);
   logout.classList.add(HIDDEN_CLASS);
   toDoForm.classList.add(HIDDEN_CLASS);
-  // toDoList.classList.add(HIDDEN_CLASS);
+  toDoList.classList.add(HIDDEN_CLASS);
   loginForm.classList.remove(HIDDEN_CLASS);
+  location.reload();
 }
 
 logout.addEventListener("click", logoutSubmit);
